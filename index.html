@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <title>FetchEstate – Property Marketplace in Pakistan</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="FetchEstate is a property marketplace in Pakistan to buy, sell, and rent verified properties." />
+  <meta name="description" content="FetchEstate is a property marketplace in Pakistan to buy, sell, and rent properties with direct user communication." />
 
   <style>
     body {
@@ -12,6 +12,7 @@
       font-family: Arial, Helvetica, sans-serif;
       background: #f9fafb;
       color: #1f2937;
+      line-height: 1.7;
     }
 
     header {
@@ -39,16 +40,43 @@
     }
 
     section {
-      margin-bottom: 32px;
+      margin-bottom: 36px;
+      background: #ffffff;
+      padding: 24px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.04);
     }
 
     h2 {
       color: #0f766e;
+      margin-top: 0;
       margin-bottom: 12px;
     }
 
     ul {
       padding-left: 20px;
+    }
+
+    .links {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-top: 12px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 16px;
+      background: #0f766e;
+      color: #ffffff;
+      border-radius: 8px;
+      font-size: 14px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .btn:hover {
+      background: #115e59;
     }
 
     footer {
@@ -70,6 +98,7 @@
     }
   </style>
 </head>
+
 <body>
 
 <header>
@@ -82,31 +111,43 @@
   <section>
     <h2>About FetchEstate</h2>
     <p>
-      FetchEstate is a property marketplace designed for users in Pakistan.
-      The app helps individuals, property owners, and agents to buy, sell, and rent
-      residential and commercial properties with ease and confidence.
+      FetchEstate is a mobile-based property marketplace designed for users in Pakistan.
+      It connects property owners, agents, and buyers, allowing them to post listings,
+      search properties, and communicate directly through the app.
     </p>
   </section>
 
   <section>
     <h2>Key Features</h2>
     <ul>
-      <li>Post and manage property listings</li>
-      <li>Search properties by location and category</li>
-      <li>Chat directly with buyers and sellers</li>
-      <li>Save properties to your wishlist</li>
-      <li>Verified and user-managed listings</li>
+      <li>Create and manage property listings</li>
+      <li>Search properties by location, price, and category</li>
+      <li>In-app chat between buyers and sellers</li>
+      <li>Save properties to wishlist</li>
+      <li>User-managed listings (Owner / Agent)</li>
+      <li>Secure authentication using Firebase</li>
     </ul>
   </section>
 
   <section>
-    <h2>Privacy & User Control</h2>
+    <h2>Privacy, Legal & User Control</h2>
     <p>
-      We respect your privacy and provide full control over your data.
-      Users can update or delete their accounts directly from within the app.
+      We respect user privacy and provide transparency regarding data usage.
+      Users can manage their profiles, control permissions, and delete their
+      accounts directly from within the app.
     </p>
+
+    <div class="links">
+      <a class="btn" href="privacy-policy.html">Privacy Policy</a>
+      <a class="btn" href="terms-and-conditions.html">Terms & Conditions</a>
+    </div>
+  </section>
+
+  <section>
+    <h2>Account Deletion</h2>
     <p>
-      👉 <a href="privacy-policy.html">Read our Privacy Policy</a>
+      FetchEstate allows users to permanently delete their account from within the app.
+      Deleting an account removes profile data, listings, and authentication records.
     </p>
   </section>
 
@@ -114,7 +155,7 @@
     <h2>Contact</h2>
     <p>
       For support or inquiries, contact us at:
-      <br />
+      <br /><br />
       📧 <a href="mailto:fetchestate@gmail.com">fetchestate@gmail.com</a>
     </p>
   </section>
